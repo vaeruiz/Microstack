@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Variable para conseguir token
+TOKENSTACK=$(cat token.txt)
+
 # Depuracion
 set -x
 
