@@ -1,10 +1,11 @@
 #!/bin/bash
 
+# Depuracion y parar script si falla una orden
+set -x
+set -e
+
 # Variable para conseguir token
 TOKENSTACK=$(cat token.txt)
-
-# Depuracion
-set -x
 
 # Actualizar maquina y repositorios
 apt update -y
