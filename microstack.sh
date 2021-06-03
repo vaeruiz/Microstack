@@ -6,6 +6,8 @@ set -e
 
 # Funcion para conseguir token
 function stacktoken(){ cat token.txt; }
+# Variable para incluir token en la orden
+var1=stacktoken
 # Actualizar maquina y repositorios
 apt update -y
 apt upgrade -y
