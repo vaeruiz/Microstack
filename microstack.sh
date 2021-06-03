@@ -4,9 +4,8 @@
 set -x
 set -e
 
-# Variable para conseguir token
-TOKENSTACK=(cat token.txt)
-
+# Funcion para conseguir token
+function stacktoken(){ cat token.txt; }
 # Actualizar maquina y repositorios
 apt update -y
 apt upgrade -y
@@ -21,4 +20,5 @@ snap install microstack --devmode --edge
 microstack init --auto --control
 
 # Obtener token para añadir nodo de computo
-microstack add-compute
+microstack add-compute > token.txt
+echo stacktoken
