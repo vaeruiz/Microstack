@@ -5,7 +5,7 @@ set -x
 set -e
 
 # Variable para conseguir token
-TOKENSTACK=$(cat token.txt)
+TOKENSTACK=(cat token.txt)
 
 # Actualizar maquina y repositorios
 apt update -y
