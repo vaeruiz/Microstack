@@ -25,3 +25,6 @@ microstack init --auto --control
 
 # Obtener token para añadir nodo de computo
 microstack add-compute > token.txt
+
+# Enviar por ssh orden al equipo de computo para entrar en el cluster
+sshpass -p asirpacr2 ssh asirpacr@192.168.22.56 microstack init --auto --compute --join $var1
