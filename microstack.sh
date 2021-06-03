@@ -23,4 +23,3 @@ microstack init --auto --control
 
 # Obtener token para añadir nodo de computo
 microstack add-compute > token.txt
-stacktoken
