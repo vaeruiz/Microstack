@@ -23,5 +23,5 @@ microstack init --auto --control
 # Obtener token para añadir nodo de computo
 microstack add-compute > token.txt
 
-# Enviar por ssh archivo con clave y script
+# Enviar por ssh archivo con token y segunda parte de script
 sshpass -p asirpacr2 scp token.txt $direccion2:/home/asirpacr2
