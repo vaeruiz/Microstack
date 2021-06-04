@@ -2,4 +2,5 @@
 
 ## Requisitos previos
 
-Las máquinas deben de haberse conectado entre si por ssh al menos una vez
+- COnfiguración de red estática.
+- Las máquinas deben de haberse conectado por ssh entre si al menos una vez.
