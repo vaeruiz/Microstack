@@ -10,9 +10,10 @@ set -e
 # Variables para conexiones ssh
 direccion1=asirpacr@192.168.22.63
 direccion2=asirpacr2@192.168.22.63
+
 # Actualizar maquina y repositorios
 apt update -y
-apt upgrade -y
+#apt upgrade -y
 
 # Instalar sshpass
 apt-get install sshpass -y
