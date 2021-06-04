@@ -9,7 +9,7 @@ set -e
 
 # Variables para conexiones ssh
 direccion1=asirpacr@192.168.22.63
-direccion2=asirpacr2@192.168.22.63
+direccion2=asirpacr2@192.168.22.58
 
 # Actualizar maquina y repositorios
 apt update -y
@@ -19,10 +19,10 @@ apt update -y
 apt-get install sshpass -y
 
 # Instalar microstack
-snap install microstack --devmode --edge
+#snap install microstack --devmode --edge
 
 # Inicializar nodo de control
-microstack init --auto --control
+#microstack init --auto --control
 
 # Obtener token para añadir nodo de computo
 microstack add-compute > token.txt
