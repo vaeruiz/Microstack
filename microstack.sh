@@ -4,9 +4,6 @@
 set -x
 set -e
 
-# Funcion para conseguir token
-#function stacktoken(){ cat token.txt; }
-
 # Variables para conexiones ssh
 direccion1=asirpacr@192.168.22.63
 direccion2=asirpacr2@192.168.22.58
