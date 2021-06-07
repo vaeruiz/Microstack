@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Depuracion y parar script si falla una orden
-set -x
+#set -x
 set -e
 
 # Variables para conexiones ssh
