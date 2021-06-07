@@ -5,8 +5,11 @@ set -x
 set -e
 
 # Variables para conexiones ssh
-direccion1=asirpacr@192.168.22.63
-direccion2=asirpacr2@192.168.22.58
+direccion1=userx@192.168.x.x
+direccion2=user2x@192.168.x.x
+direccion2=user3x@192.168.x.x
+sshpass2=x
+sshpass3=x
 
 # Actualizar repositorios
 apt update -y
@@ -24,4 +27,6 @@ microstack init --auto --control
 microstack add-compute > token.txt
 
 # Enviar por ssh archivo con token
-sshpass -p asirpacr2 scp token.txt $direccion2:/home/asirpacr2
+sshpass -p $sshpass2 scp token.txt $direccion2:/home/asirpacr2
+sshpass -p $sshpass3 scp token.txt $direccion3:/home/asirpacr3
+
