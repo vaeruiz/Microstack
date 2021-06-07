@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Depuracion y parar script si falla una orden
-set -x
+#set -x
 set -e
 
 # Funcion para conseguir token
@@ -23,7 +23,7 @@ microstack init --auto --compute --join $tokenvar
 sleep 2s
 echo "Proceso de despliegue de nodo de cómputo acabado"
 echo "Mostranto credenciales de inicio de sesion en el servidor"
-sleep 2s
+sleep 4s
 clear
 echo "El usuario es:"
 echo "admin"
