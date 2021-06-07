@@ -27,6 +27,7 @@ En un caso general solo habrá que editar las variables que utiliza el script, e
 Hecho esto, le añadimos el permiso de ejecución y lo ejecutamos:
 
 > sudo chmod +x microstack.sh
+
 > sudo ./microstack.sh
 
 De forma automática se configurará nuestro equipo como un nodo de control y enviará a través de ssh el archivo que contiene el token necesario para incluir los nodos de cómputo en nuestro clúster junto con la segunda parte del script.
