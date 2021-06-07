@@ -28,5 +28,7 @@ microstack add-compute > token.txt
 
 # Enviar por ssh archivo con token
 sshpass -p $sshpass2 scp token.txt $direccion2:/home/asirpacr2
+sshpass -p $sshpass2 scp Microstack/microstack2.sh $direccion2:/home/asirpacr2
 sshpass -p $sshpass3 scp token.txt $direccion3:/home/asirpacr3
+sshpass -p $sshpass3 scp Microstack/microstack2.sh $direccion3:/home/asirpacr3
 
