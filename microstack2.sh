@@ -13,5 +13,8 @@ tokenvar=$(stacktoken)
 # Actualizar repositorios
 apt update -y
 
+# Instalar microstack
+snap install microstack --devmode --edge
+
 # Declarar equipo como nodo de computo
 microstack init --auto --compute --join $tokenvar
