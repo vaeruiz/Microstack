@@ -8,7 +8,7 @@ set -e
 function stacktoken(){ cat token.txt; }
 
 # Variable para llamar a la funcion stacktocken
-tokenvar=stacktoken
+tokenvar=$(stacktoken)
 
 # Actualizar repositorios
 apt update -y
