@@ -5,9 +5,9 @@ set -x
 set -e
 
 # Variables para conexiones ssh
-direccion1=userx@192.168.x.x
-direccion2=user2x@192.168.x.x
-direccion2=user3x@192.168.x.x
+direccion1=user@192.168.x.x
+direccion2=user2@192.168.x.x
+direccion3=user3@192.168.x.x
 homedir2=x
 homedir3=x
 sshpass2=x
