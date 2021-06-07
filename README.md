@@ -4,7 +4,7 @@
 
 - Todas las máquinas deberán tener el servidor OpenSSH instalado (sudo apt-get install openssh-server).
 - Las máquinas deben de haberse conectado por ssh al menos una vez al host de control.
-- Configuración de red estática.
+- Los equipos deberán de tener una configuración de red estática.
 
 ## Modo de empleo
 
