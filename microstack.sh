@@ -8,6 +8,8 @@ set -e
 direccion1=userx@192.168.x.x
 direccion2=user2x@192.168.x.x
 direccion2=user3x@192.168.x.x
+homedir2=x
+homedir3=x
 sshpass2=x
 sshpass3=x
 
@@ -27,8 +29,7 @@ microstack init --auto --control
 microstack add-compute > token.txt
 
 # Enviar por ssh archivo con token
-sshpass -p $sshpass2 scp token.txt $direccion2:/home/asirpacr2
-sshpass -p $sshpass2 scp Microstack/microstack2.sh $direccion2:/home/asirpacr2
-sshpass -p $sshpass3 scp token.txt $direccion3:/home/asirpacr3
-sshpass -p $sshpass3 scp Microstack/microstack2.sh $direccion3:/home/asirpacr3
-
+sshpass -p $sshpass2 scp token.txt $direccion2:$homedir2
+sshpass -p $sshpass2 scp Microstack/microstack2.sh $direccion2:$homedir2
+sshpass -p $sshpass3 scp token.txt $direccion3:$homedir3
+sshpass -p $sshpass3 scp Microstack/microstack2.sh $direccion3:$homedir3
