@@ -13,9 +13,6 @@ homedir3=x
 sshpass2=x
 sshpass3=x
 
-# Actualizar repositorios
-apt update -y
-
 # Instalar sshpass
 apt-get install sshpass -y
 
