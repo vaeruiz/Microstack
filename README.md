@@ -2,6 +2,7 @@
 
 ## Requisitos previos
 
+- Actualizar los repositorios de la máquina (sudo apt update).
 - Todas las máquinas deberán tener el servidor OpenSSH instalado (sudo apt-get install openssh-server).
 - El host principal (nodo de control) tiene que haber establecido una conexión ssh con las máquinas de cómputo al menos una vez.
 - Los equipos deberán de tener una configuración de red estática.
