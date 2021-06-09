@@ -4,34 +4,45 @@
 
 - Actualizar los repositorios de la máquina (sudo apt update).
 - Todas las máquinas deberán tener el servidor OpenSSH instalado (sudo apt-get install openssh-server).
-- El host principal (nodo de control) tiene que haber establecido una conexión ssh con las máquinas de cómputo al menos una vez.
 - Los equipos deberán de tener una configuración de red estática.
 
 ## Modo de empleo
-
-Este script se divide en dos partes, la parte host de control, en donde se despliega el nodo de control principal necesario para Openstack, y la segunda parte, donde se despliegan los nodos de cómputo.
 
 Después de cumplir los requisitos previos, descargamos el repositorio:
 
 > sudo git clone https://github.com/vaeruiz/Microstack.git
 
-Y movemos el archivo **microstack.sh** al directorio home de nuestro nodo de control:
+Y movemos los archivos **microstack.sh** y **filepass.sh** al directorio home de nuestro nodo de control:
 
-> sudo mv Microstack/microsctk.sh ./
+> sudo mv Microstack/microsctak.sh ./
 
-A continuación, abrimos el script y lo adaptamos a nuestro entorno:
+> sudo mv Microstack/filepass.sh ./
 
-> sudo nano microstack.sh
-
-En un caso general solo habrá que editar las variables que utiliza el script, el resto podemos dejarlo tal como está.
-
-Hecho esto, le añadimos el permiso de ejecución y lo ejecutamos:
+A continuación, le añadimos a **micorstack.sh** el permiso de ejecusión y lo ejecutamos:
 
 > sudo chmod +x microstack.sh
 
 > sudo ./microstack.sh
 
-De forma automática se configurará nuestro equipo como un nodo de control y enviará a través de ssh el archivo que contiene el token necesario para incluir los nodos de cómputo en nuestro clúster junto con la segunda parte del script.
+De forma automática se configurará nuestro equipo como un nodo de control, cuando termine debemos de iniciar conexiones ssh entre el nodo controlador y el resto de máquinas para que almacene sus claves, esto lo hacemos para que el nodo controlador pueda enviar el token del clúster al resto de máquinas adyacentes a las máquinas de trabajo.
+
+> ssh user@direccion_ip
+
+Una vez hechas las conexiones, añadimos el permiso de ejecución a **filepass.sh** y y lo editamos para configurar las variables con las direcciones de las máquinas correspondientes, hecho esto lo ejecutamos:
+
+> sudo chmod +x filepass.sh
+
+> sudo ./filepass.sh
+
+De esta forma el nodo controlador enviará dos archivos:
+
+- El token de acceso al clúster.
+- El script de integración al clúster.
+
+Cuando finalice el proceso encontraremos los archivos mencionados anteriormente en nuestros nodos de cómputo, lo único que tendremos que hacer es aplicar el permiso de ejecución al script y ejecutarlo
+
+
+Hecho todo esto nuestro figurará como un nodo de control y habrá enviado a través de ssh el archivo que contiene el token necesario para incluir los nodos de cómputo en nuestro clúster junto con la segunda parte del script.
 
 Ahora pasaremos a los nodo de cómputo, antes de ejecutar el script **microstack2.sh** tenemos que añadirle el permiso de ejecución.
 
