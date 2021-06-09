@@ -4,8 +4,6 @@
 #set -x
 set -e
 
-
-
 # Instalar sshpass
 apt-get install sshpass -y
 
