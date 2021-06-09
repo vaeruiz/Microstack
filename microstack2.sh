@@ -10,9 +10,6 @@ function stacktoken(){ cat token.txt; }
 # Variable para llamar a la funcion stacktocken
 tokenvar=$(stacktoken)
 
-# Actualizar repositorios
-apt update -y
-
 # Instalar microstack
 snap install microstack --devmode --edge
 
