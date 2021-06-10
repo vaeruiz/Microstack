@@ -24,7 +24,7 @@ A continuación, le añadimos a **micorstack.sh** el permiso de ejecusión y lo 
 
 > sudo ./microstack.sh
 
-De forma automática se configurará nuestro equipo como un nodo de control, cuando termine debemos de iniciar conexiones ssh entre el nodo controlador y el resto de máquinas para que almacene sus claves, esto lo hacemos para que el nodo controlador pueda enviar el token del clúster al resto de máquinas adyacentes a las máquinas de trabajo.
+De forma automática se configurará nuestro equipo como un nodo de control, cuando termine debemos de iniciar conexiones ssh entre el nodo controlador y el resto de máquinas para que almacene sus claves, esto lo hacemos para que el nodo controlador pueda enviar el token del clúster al resto de máquinas adyacentes.
 
 > ssh user@direccion_ip
 
