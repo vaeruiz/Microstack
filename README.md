@@ -18,7 +18,7 @@ Y movemos los archivos **microstack.sh** y **filepass.sh** al directorio home de
 
 > sudo mv Microstack/filepass.sh ./
 
-A continuación, le añadimos a **micorstack.sh** el permiso de ejecusión y lo ejecutamos:
+A continuación, le añadimos a **microstack.sh** el permiso de ejecusión y lo ejecutamos:
 
 > sudo chmod +x microstack.sh
 
