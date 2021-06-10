@@ -42,9 +42,9 @@ De esta forma el nodo controlador enviará dos archivos:
 Cuando finalice el proceso encontraremos los archivos mencionados anteriormente en nuestros nodos de cómputo, lo único que tendremos que hacer es aplicar el permiso de ejecución al script y ejecutarlo
 
 
-Hecho todo esto nuestro figurará como un nodo de control y habrá enviado a través de ssh el archivo que contiene el token necesario para incluir los nodos de cómputo en nuestro clúster junto con la segunda parte del script.
+Hecho todo esto nuestra máquina habrá enviado a través de ssh el token necesario para incluir los nodos de cómputo en nuestro clúster junto con la segunda parte del script.
 
-Ahora pasaremos a los nodo de cómputo, antes de ejecutar el script **microstack2.sh** tenemos que añadirle el permiso de ejecución.
+Ahora pasaremos a los nodos de cómputo, antes de ejecutar el script **microstack2.sh** tenemos que añadirle el permiso de ejecución.
 
 > sudo chmod +x microstack.sh
 
