@@ -14,9 +14,11 @@ Después de cumplir los requisitos previos, descargamos el repositorio:
 
 Y movemos los archivos **microstack.sh** y **filepass.sh** al directorio home de nuestro nodo de control:
 
-> sudo mv Microstack/microsctak.sh ./
+> sudo mv Microstack/microsctak.sh .
 
-> sudo mv Microstack/filepass.sh ./
+> sudo mv Microstack/filepass.sh .
+
+**(Podemos utilizar . en vez de la ruta absoluta si ya estamos posicionados en el directorio home de nuestro sistema)**
 
 A continuación, le añadimos a **microstack.sh** el permiso de ejecusión y lo ejecutamos:
 
