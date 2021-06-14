@@ -8,7 +8,7 @@
 
 ## Modo de empleo
 
-Después de cumplir los requisitos previos, descargamos el repositorio:
+Después de cumplir los requisitos previos, descargamos el repositorio en el nodo controlador:
 
 > sudo git clone https://github.com/vaeruiz/Microstack.git
 
