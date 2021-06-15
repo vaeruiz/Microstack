@@ -3,6 +3,7 @@
 # Variables de entorno
 NOMBREINTERFAZ=
 IPINTERFAZ=/24
+
 # Crear alias de los servicos microstack
 sudo snap alias microstack.openstack openstack
 sudo snap alias microstack.ovs-vsctl ovs-vsctl
