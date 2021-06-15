@@ -50,3 +50,11 @@ Ahora pasaremos a los nodos de cómputo, antes de ejecutar el script **microstac
 Una vez hecho podremos ejecutarlo.
 
 Cuando el script termine de ejecutarse, nos mostrará las credenciales de inicio de sesión en nuestro servidor OpenStack.
+
+Si hacemos cambios administrativos del entorno, o vamos a apagar los equipos, debemos deshabilitar primero el entorno microstack con el comando:
+
+> sudo snap disable microstack
+
+Para arrancarlo de nuevo utilizamos el comando:
+
+> sudo snap enable microstack
