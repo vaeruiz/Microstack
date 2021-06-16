@@ -14,7 +14,7 @@ Después de cumplir los requisitos previos, descargamos el repositorio en el nod
 
 Y movemos los archivos **microstack.sh** y **filepass.sh** al directorio home de nuestro nodo de control:
 
-> sudo mv Microstack/microstak.sh .
+> sudo mv Microstack/microstack.sh .
 
 > sudo mv Microstack/filepass.sh .
 
